@@ -1,0 +1,14 @@
+# Tarea 1
+_En esta tarea realice un codigo el cual muestre el tipo de dato solicitado_
+
+## Comenzando 🚀
+_Inicie con ejemplos sencillos para probar que tipo de respuesta daba, cabe aclarar que cosa que no sea un tipo de dato, lo hara **Undifined**, como ejemplo_
+
+```
+    console.log(typeof Reynathan);
+```
+_Lo cual mostrará_
+
+```
+    undefined
+```

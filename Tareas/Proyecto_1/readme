@@ -1,0 +1,28 @@
+# Proyecto 1
+_Este proyecto da solución ala problematica planteada en el proyecto de campus_
+
+## SOLUCION 🚀
+_Inicie con una variable **const** la cual era alumn para que el profesor pueda saber a quien califica, por otro lado use if anidado para poder realizar la solucion_
+
+```
+     if(nota >= 90){
+        console.log(`EXCELENTE,  ${alumn} eres increible`);
+    }else if(nota >=75){
+        console.log(`Bien,  ${alumn} no vas tan mal`)
+    }else if(nota >=60){
+        console.log(`Suficiente, ${alumn} necesitas mejorar`)
+    }else{
+        console.log(`REPROBADO, ${alumn} eres bien wey estudia más`)
+    }
+
+```
+_Esto da como concluido el ejercicio, sin embargo, añadí un if extra el cual no deja continuar al profesor (usuario) si este no ah tecleado el nombre del alumno_
+
+```
+    if (!alumn){
+    console.log("No ingresaste el nombre del alumno.");     
+} else {
+    let nota = parseInt(window.prompt("¿Cuanto saco en el examen en una escala de 0 a 100?"));
+}
+```
+_Terminando de esta forma mi proyecto_

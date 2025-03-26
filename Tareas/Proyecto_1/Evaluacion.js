@@ -1,14 +1,3 @@
-// let edad = pareInt(window.prompt("CUANTOS AÑOS TIENES??"));
-
-// if(edad >= 18){
-//     console.log("Eres mayor de edad");
-// }else if(edad < 0){
-//     console.log("Edad no valida. Ingresa un numero");
-// }else if (isNaN(edad)){
-//     console.log("Esa edad no es valida")
-// }else{
-//     console.log("Eres menor de edad");
-// }
 
 const alumn = window.prompt("Nombre del alumno a calificar");
 

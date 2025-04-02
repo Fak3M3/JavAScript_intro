@@ -8,5 +8,5 @@ function agregarLibro(titulo) {
 }
 
 function mostrarLibrosLeidos() {
-    console.log(`Los libros que has leído ${userName} son:`, librosLeidos);
+    console.log(`Los libros que has leído ${userNamere} son:`, librosLeidos);
 }

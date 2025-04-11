@@ -10,8 +10,8 @@
     <div class="navbar">
         <h2>Mi sitio web</h2>
         <span id="clock">00:00:00</span>
-        <button class="theme-toggle">Modo obscuro</button>
-        <button class="menu-toggle">Menú</button>
+        <button class="theme-toggle" onclick="toogleTheme()">Modo obscuro</button>
+        <button class="menu-toggle" onclick="toggleMenu()">Menú</button>
     </div>
     <div class="menu" id="menu">
     <a href="#inicio">Inicio</a>
@@ -36,7 +36,7 @@
             <span id="error-email" class="error"></span>
             <textarea id="mensaje" placeholder="Ingresa tu mensaje"></textarea>
             <span id="error-mensaje" class="error"></span>
-            <button>ENVIAR</button>
+            <button onclick= "validateForm()">ENVIAR</button>
         </div>
     </siv>
     <!-- script -->

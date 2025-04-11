@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <span id="bank_logo">
+                
+            </span>
+        </div>
+        <div id="tema">
+            <h2 class="color-changing1"></h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Pantalla de selección de cuenta -->
+            <form id="selection-screen" onsubmit="event.preventDefault(); selectAccount();">
+                <h2>Selecciona una cuenta</h2>
+                <select id="account-select">
+                    <option value="Lucia">Lucia</option>
+                    <option value="Tatiana">Tatiana</option>
+                    <option value="Reynathan">Reynathan</option>
+                </select>
+                <button type="submit">Seleccionar Cuenta</button>
+            </form>
+
+            <!-- Pantalla de ingreso de password -->
+            <form id="password-screen" style="display:none;" onsubmit="event.preventDefault(); checkPassword();">
+                <h2>Ingresa tu contraseña</h2>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+                <p id="error-message" style="color:red; display:none;">Contraseña incorrecta, intenta de nuevo.</p>
+            </form>
+
+            <!-- Pantalla de opciones del cajero -->
+            <div id="options-screen" style="display:none;">
+                <h2>Opciones de la cuenta</h2>
+                <button type="button" onclick="getSaldo()">Consultar saldo</button>
+                <button type="button" onclick="ingresarMonto()">Ingresar monto</button>
+                <button type="button" onclick="retirarMonto()">Retirar monto</button>
+                <button type="button" id="home" onclick="mostrarHistorial()">Ver historial de transacciones</button>
+                <button type="button" onclick="salir()">Salir</button>
+            </div>
+
+            <!-- Sección para mostrar el saldo solo cuando se consulta -->
+            <div id="saldo-display" style="display:none;">
+                <h3>Saldo Actual: $<span id="current-saldo">0</span></h3>
+            </div>
+
+            <!-- Sección para ingresar monto -->
+            <div id="ingreso-display" style="display:none;">
+                <h3>Ingrese el monto a depositar:</h3>
+                <input type="number" id="monto-ingreso" placeholder="Monto a ingresar">
+                <button type="button" onclick="confirmarIngreso()">Confirmar Ingreso</button>
+            </div>
+
+            <!-- Sección para retirar monto -->
+            <div id="retiro-display" style="display:none;">
+                <h3>Ingrese el monto a retirar:</h3>
+                <input type="number" id="monto-retiro" placeholder="Monto a retirar">
+                <button type="button" onclick="confirmarRetiro()">Confirmar Retiro</button>
+            </div>
+
+            <!-- Mensaje al usuario -->
+            <div id="transaction-message" style="display:none;">
+                <h3 id="message-text"></h3>
+            </div>
+
+            <!-- Sección para ver historial -->
+            <div id="historial-display" style="display:none;">
+                <h3>Este es tú historial de transacciones:</h3>
+                <ul id="historial-list"></ul>
+            </div>
+
+        </div>
+        <script src="main.js"></script>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p class="color-changing2"></p>
+        </div>
+    </footer>
+</body>
+</html>

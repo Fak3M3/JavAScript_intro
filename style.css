@@ -1,0 +1,19 @@
+.comment-box {
+    margin-top: 20px;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.comment-time {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.comment-actions {
+    text-align: right;
+}

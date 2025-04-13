@@ -147,8 +147,7 @@ function mostrarHistorial() {
 function salir() {
     alert("Gracias por usar el banco del bienestar, ¡vuelva pronto!");
     // Oculta
-    document.getElementById('options-screen').style.display = 'none';
-     
+    document.getElementById('options-screen').style.display = 'none'; 
     document.getElementById('saldo-display').style.display = 'none'; 
     document.getElementById('historial-display').style.display = 'none';
     // Muestra la pantalla de seleción
